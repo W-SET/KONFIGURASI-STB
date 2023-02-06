@@ -1,6 +1,6 @@
 proxies:
 - name: MASTER
-  server: bugmu.com
+  server: YAHAHAAA
   port: 443
   type: trojan
   password: f2233420-1ecf-11ed-bf74-1239d0255272
