@@ -1,14 +1,53 @@
 proxies:
-- name: MASTER
-  server: bugmu.com
+- name: FORMAT KANA
+  server: 104.17.3.81
   port: 443
   type: trojan
-  password: f2233420-1ecf-11ed-bf74-1239d0255272
-  sni: us-trojan.bonds.id
+  password: 74e1b300-a5fb-11ed-8954-1239d0255272
+  sni: sg2-trojan.bonds.id
   skip-cert-verify: true
   udp: true
   network: ws
   ws-opts:
     path: /howdy
     headers:
-      Host: us-trojan.bonds.id
+      Host: sg2-trojan.bonds.id
+- name:  FORMATKU HE
+  server: 104.17.3.81
+  port: 443
+  type: trojan
+  password: 74e1b300-a5fb-11ed-8954-1239d0255272
+  network: ws
+  sni: sg2-trojan.bonds.id
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /howdy
+    headers:
+        Host: sg2-trojan.bonds.id
+- name:  OVH
+  server: 104.17.3.81
+  port: 443
+  type: trojan
+  password: eb9b9dc0-a5fb-11ed-98c3-1239d0255272
+  network: ws
+  sni: sg-3.test3.net
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /howdy
+    headers:
+        Host: sg-3.test3.net
+- name:  AMP
+  server: 104.17.3.81
+  port: 443
+  type: trojan
+  password: 24b9a180-a5fc-11ed-a917-1239d0255272
+  network: ws
+  sni: sg-2.test3.net
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /howdy
+    headers:
+        Host: sg-2.test3.net
