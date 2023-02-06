@@ -1,14 +1,33 @@
 proxies:
-- name: MASTER
-  server: YAHAHAAA
-  port: 443
-  type: trojan
-  password: f2233420-1ecf-11ed-bf74-1239d0255272
-  sni: us-trojan.bonds.id
+- name: opok-tsel
+  server: dynamic-sg1b.obfs.xyz
+  type: vmess
+  port: 2086
+  uuid: 82eef6b9-82b4-405d-9181-ce4aefbc7344
+  alterId: 0
+  cipher: auto
+  tls: false
   skip-cert-verify: true
-  udp: true
+  servername: z-p15.www.instagram.com
   network: ws
   ws-opts:
-    path: /howdy
+    path: http://tsel.me/worryfree
     headers:
-      Host: us-trojan.bonds.id
+      Host: z-p15.www.instagram.com
+  udp: true
+- name: opok-tsel nur
+  server: sg-8.0rd.net
+  type: vmess
+  port: 2086
+  uuid: a88c4c30-a489-11ed-b934-205c6d5f5d78
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  servername: z-p15.www.instagram.com
+  network: ws
+  ws-opts:
+    path: http://tsel.me/worryfree
+    headers:
+      Host: z-p15.www.instagram.com
+  udp: true
