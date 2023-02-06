@@ -51,3 +51,55 @@ proxies:
     path: /howdy
     headers:
         Host: sg-2.test3.net
+- name:  AMP SNI
+  server: sg-2.test3.net
+  port: 443
+  type: trojan
+  password: 24b9a180-a5fc-11ed-a917-1239d0255272
+  network: ws
+  sni: www.udemy.com
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /howdy
+    headers:
+        Host: sg-2.test3.net
+- name:  AMP SNI 2
+  server: sg-2.test3.net
+  port: 443
+  type: trojan
+  password: 24b9a180-a5fc-11ed-a917-1239d0255272
+  network: ws
+  sni: gw.ruangguru.com
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /howdy
+    headers:
+        Host: sg-2.test3.net
+- name:  OVH SNI
+  server: sg-3.test3.net
+  port: 443
+  type: trojan
+  password: eb9b9dc0-a5fb-11ed-98c3-1239d0255272
+  network: ws
+  sni: gw.ruangguru.com
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /howdy
+    headers:
+        Host: sg-3.test3.net
+- name:  OVH SNI 2
+  server: sg-3.test3.net
+  port: 443
+  type: trojan
+  password: eb9b9dc0-a5fb-11ed-98c3-1239d0255272
+  network: ws
+  sni: www.udemy.com
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /howdy
+    headers:
+        Host: sg-3.test3.net         
