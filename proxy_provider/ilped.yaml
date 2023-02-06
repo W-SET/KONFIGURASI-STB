@@ -1,14 +1,15 @@
 proxies:
-- name: FORMAT KANA
-  server: 104.17.3.81
+- name:  FORMATKU WS
+  server: www.udemy.com
   port: 443
   type: trojan
   password: 74e1b300-a5fb-11ed-8954-1239d0255272
+  network: ws
   sni: sg2-trojan.bonds.id
   skip-cert-verify: true
   udp: true
-  network: ws
   ws-opts:
     path: /howdy
     headers:
-      Host: sg2-trojan.bonds.id
+        Host: sg2-trojan.bonds.id
+
