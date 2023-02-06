@@ -102,4 +102,30 @@ proxies:
   ws-opts:
     path: /howdy
     headers:
-        Host: sg-3.test3.net         
+        Host: sg-3.test3.net
+- name:  FORMATKU WS
+  server: www.udemy.com
+  port: 443
+  type: trojan
+  password: 74e1b300-a5fb-11ed-8954-1239d0255272
+  network: ws
+  sni: sg2-trojan.bonds.id
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /howdy
+    headers:
+        Host: sg2-trojan.bonds.id
+ - name:  AMP WS
+  server: gw.ruangguru.com
+  port: 443
+  type: trojan
+  password: 24b9a180-a5fc-11ed-a917-1239d0255272
+  network: ws
+  sni: sg-2.test3.net
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /howdy
+    headers:
+        Host: sg-2.test3.net
